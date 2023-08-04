@@ -1,8 +1,17 @@
-# React + Vite
+# Hotel Booking Application
+This is A Simple hotel booking application .user can be sign up and book catagorywise room
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Pakages
+- axios
+- antd
+- react-router-dom
+- react-icons
+- formix
+- redux toolkit
+# Hooks
+- useState
+- useSelector
+- useDispatch
+- useLocation
+- useParams
+- useEffect
