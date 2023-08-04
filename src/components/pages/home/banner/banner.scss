@@ -1,0 +1,35 @@
+@import "../../../../mixins.scss";
+.banner {
+  position: relative;
+}
+.bannerHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  h1 {
+    text-transform: capitalize;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 30px;
+    @include md {
+      font-size: 80px;
+    }
+  }
+  span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    @include md{
+
+      font-size: 30px;
+    }
+  }
+}
+.banner2heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

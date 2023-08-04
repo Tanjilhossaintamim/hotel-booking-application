@@ -1,0 +1,67 @@
+@import "../../mixins.scss";
+.footerwrapper {
+  background-color: #333333;
+  padding: 5% 0;
+  color: rgba(255, 255, 255, 0.5);
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    @include md {
+      justify-content: space-between;
+    }
+
+    div {
+      display: flex;
+      width: 49%;
+      flex-direction: column;
+      margin-bottom: 20px;
+      @include md {
+        width: 24%;
+      }
+      h6 {
+        font-size: 18px;
+        padding-bottom: 20px;
+        color: #fff;
+      }
+      button {
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        background-color: #f23a2e;
+        color: #fff;
+        cursor: pointer;
+        transition: color 300ms ease-in;
+        @include md{
+          margin-top: 20px;
+
+        }
+      }
+      P {
+        cursor: pointer;
+        margin-bottom: 10px;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .socialicon {
+      .icon {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        svg {
+          font-size: 20px;
+          transition: color 300ms ease-in;
+          &:hover {
+            color: #f23a2e;
+            cursor: pointer;
+            scale: 1.01;
+          }
+        }
+      }
+    }
+  }
+}
+

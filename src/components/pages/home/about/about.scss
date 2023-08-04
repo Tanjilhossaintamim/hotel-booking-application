@@ -1,0 +1,68 @@
+@import "../../../../mixins.scss";
+.aboutwrapper {
+  padding: 40px 0;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5%;
+  @include md {
+    flex-direction: row;
+  }
+
+  .aboutImg {
+    width: 100%;
+    margin-bottom: 40px;
+    @include md {
+      width: 55%;
+      margin-bottom: 0;
+    }
+    position: relative;
+    .firtimg {
+      width: 90%;
+      height: 400px;
+    }
+    :last-child {
+      width: 300px;
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      z-index: 10;
+      border-top: 8px solid #fff;
+      border-left: 8px solid #fff;
+    }
+  }
+  .aboutdes {
+    width: 100%;
+    @include md{
+
+        width: 40%;
+    }
+    h1 {
+      padding-bottom: 20px;
+    }
+    p {
+      line-height: 2;
+      color: gray;
+    }
+    .alltext {
+      margin-top: 20px;
+      button {
+        border: 0;
+        outline: 0;
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 4px;
+        transition: opacity 300ms ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

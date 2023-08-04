@@ -1,0 +1,23 @@
+@import "../../../../mixins.scss";
+.gallerywapper {
+  padding: 5% 0;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    div {
+      width: 50%;
+      height: 250px;
+      overflow: hidden;
+      cursor: zoom-in;
+      @include md {
+        width: 25%;
+      }
+    }
+    img {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}

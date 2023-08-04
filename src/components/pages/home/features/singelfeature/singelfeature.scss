@@ -1,0 +1,17 @@
+@import "../../../../../mixins.scss";
+
+.singelfeature{
+    width: 45%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    @include md{
+        width: 23%;
+    }
+    img{
+        width: 40%;
+    }
+    h5{
+        padding-top: 10px;
+    }
+}

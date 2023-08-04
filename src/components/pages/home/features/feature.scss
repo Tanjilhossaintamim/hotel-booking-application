@@ -1,0 +1,11 @@
+@import "../../../../mixins.scss";
+.featurewrapper {
+  padding: 5% 0;
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+}
